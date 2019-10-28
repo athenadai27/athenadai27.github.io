@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="styles.css"/>
+<title>Website Prototype</title>
+</head>
+
+
+<body>	
+	<header class="container">
+		<div class="row">
+			<div class="col-sm-4"><h1 style="display: inline;"><a href="index.html" class="cleanLink">Athena Dai</a></h1></div>
+			<div class="col-sm-8 text-right">
+				<nav class="navProp">
+					<p class="headerInfo"><a href="index.html" class="cleanLink">Home</a></p>
+					<p class="headerInfo"><a href="resume.html"class="cleanLink">Resume</a></p>
+					<p class="headerInfo"><a href="art.html"class="cleanLink">Art</a></p>
+					<p class="headerInfo">Music</p>
+					<p class="headerInfo"><a href="games.html" class="cleanLink">Games</a></p>
+				</nav>
+			</div>
+		</div>
+	</header>
+	
+	<div class="headerImage">
+		<div style="position:relative">
+			<img src="https://i.imgur.com/LQ6Qb1p.png" class="mySlides" style="width:100%"/>
+			<img src="https://i.imgur.com/XLg5pNL.png" class="mySlides" style="width:100%"/>
+			<img src="https://i.imgur.com/WlJ2kMd.png" class="mySlides" style="width:100%"/>
+			<div class="centered">
+				<h1 style="color:white;">My Music.</h1>
+				<h2 style="color:white;">Film Scores, SFX Libraries, Sheet Music, and More.</h2>
+			</div>
+		</div>
+	</div>
+	
+	<p style="padding-bottom:5px"></p>
+	
+	<section class="container">
+		<div class="row">
+			<div class="col-sm-7 alignV"><iframe width="640px" height="360px" src="https://www.youtube.com/embed/vHUEdBweAF4?autoplay=0"></iframe></div>
+			<div class="col-sm-5 alignV">
+				<h3 style="font-size:15px">Wonder Woman Film Score.</h3>
+				<p style="font-size:15px">The composition of the score was meant for a full orchestral ensemble, and came together after the video was completed.
+				Ultimately the piece was also played live in concert. The video was edited by me as well.</p>
+				<p style="font-size:15px">Composed in Musescore, edited with Shotcut.</p>
+				
+				<p class="button"><a href="https://www.dropbox.com/s/iu9h4zk0hbnu8w8/WW_Comp.pdf?dl=0" class="cleanLink whiteLink" >Download the PDF.</a></p>	
+				<div class="greyBorder container" style="margin-top:auto;">
+					<div class="quarterSplit">
+						<div class="popup" onclick="showPopUp(0)">
+							<img class="previewImage artFade" src="https://i.imgur.com/71KedxE.png"/>
+							<div class="centered textFade">
+								<h3 class="labelTop">Page 1.</h3>
+							</div>
+							<span class="fullScreen popAsset centered"><img class="hLimit" src="https://i.imgur.com/71KedxE.png"/></span>
+						</div>
+					</div>
+					<div class="quarterSplit">
+						<div class="popup" onclick="showPopUp(1)">
+							<img class="previewImage artFade" src="https://i.imgur.com/I4NZSHp.png"/>
+							<div class="centered textFade">
+								<h3 class="labelTop">Page 2.</h3>
+							</div>
+							<span class="fullScreen popAsset centered"><img class="hLimit" src="https://i.imgur.com/I4NZSHp.png"/></span>
+						</div>
+					</div>
+					<div class="quarterSplit">
+						<div class="popup" onclick="showPopUp(2)">
+							<img class="previewImage artFade" src="https://i.imgur.com/tpAnt1M.png"/>
+							<div class="centered textFade">
+								<h3 class="labelTop">Page 3.</h3>
+							</div>
+							<span class="fullScreen popAsset centered"><img class="hLimit" src="https://i.imgur.com/tpAnt1M.png"/></span>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	
+	<p style="padding-bottom:15px;"></p>
+	<hr>
+	<p style="padding-bottom:15px;"></p>
+	
+	<section class="container">
+		<div class="row">
+			<div class="col-sm-7 container alignV">
+				<audio class="center" controls><source src="Izels_song.mp3" type="audio/mp3"/></audio>
+				
+				<div class="greyBorder container" style="margin-top:auto;">
+					<div class="quarterSplit">
+						<div class="popup" onclick="showPopUp(3)">
+							<img class="previewImage artFade" src="https://i.imgur.com/t4norBi.png"/>
+							<div class="centered textFade">
+								<h3 class="labelTop">Page 1.</h3>
+							</div>
+							<span class="fullScreen popAsset centered"><img class="hLimit" src="https://i.imgur.com/t4norBi.png"/></span>
+						</div>
+					</div>
+					<div class="quarterSplit">
+						<div class="popup" onclick="showPopUp(4)">
+							<img class="previewImage artFade" src="https://i.imgur.com/wQVzd6l.png"/>
+							<div class="centered textFade">
+								<h3 class="labelTop">Page 2.</h3>
+							</div>
+							<span class="fullScreen popAsset centered"><img class="hLimit" src="https://i.imgur.com/wQVzd6l.png"/></span>
+						</div>
+					</div>
+					<div class="quarterSplit">
+						<div class="popup" onclick="showPopUp(4)">
+							<img class="previewImage artFade" src="https://i.imgur.com/8w9J2zx.png"/>
+							<div class="centered textFade">
+								<h3 class="labelTop">Page 2.</h3>
+							</div>
+							<span class="fullScreen popAsset centered"><img class="hLimit" src="https://i.imgur.com/8w9J2zx.png"/></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-5 alignV">
+				<h3 style="font-size:15px">Commissioned Orchestral Score - Izel's Song.</h3>
+				<p style="font-size:15px">Commissioned work for another individual's character, to be used in tabletop games and online animations.
+											Commissioner wanted a mournful beginning followed by a rise to power.</p>
+				<p style="font-size:15px">Composed in Musescore.</p>
+				
+				<p style="padding-bottom:5px"></p>
+				
+				<p class="button"><a href="https://www.dropbox.com/s/smdejzgz6qks8sj/Izels_Song.pdf?dl=0"class="cleanLink whiteLink">Download the PDF.</a></p>	
+			
+				<p style="padding-bottom:5px"></p>
+				
+				<p class="button"><a href="https://www.dropbox.com/s/zuzgob9z1254ijo/Izels_Song.mp3?dl=0"class="cleanLink whiteLink">Download the MP3.</a></p>	
+			
+				<p style="padding-bottom:5px"></p>
+			</div>
+		</div>
+	</section>
+	
+	<p style="padding-bottom:15px;"></p>
+	<hr>
+	<p style="padding-bottom:15px;"></p>
+	
+		<section class="container">
+		<div class="row">
+			<div class="col-sm-7 container alignV">
+				<audio class="center" controls><source src="Bryant_Boss_Music.mp3" type="audio/mp3"/></audio>
+				
+				<div style="margin-top:auto;">
+					<p class="button"><a href="https://www.dropbox.com/s/9vl1hwyotghjzl7/Bryant_Boss_Music.mp3?dl=0"class="cleanLink whiteLink">Download the MP3.</a></p>
+				</div>
+			</div>
+			
+			<div class="col-sm-5 alignV">
+				<h3 style="font-size:15px">Game Music - Technic Boss.</h3>
+				<p style="font-size:15px">Track for the final boss of "Pinrut". Intention was a heavy techno/electronic feel to emphasise the themes of nature v. technology in the game.</p>
+				<p style="font-size:15px">Made in Audacity and LMMS.</p>
+			</div>
+		</div>
+	</section>
+	
+	<p style="padding-bottom:15px;"></p>
+	<hr>
+	<p style="padding-bottom:15px;"></p>
+	
+	<section class="container">
+		<div class="row">
+			<div class="col-sm-7 container alignV">
+				<audio class="center" controls><source src="steps.mp3" type="audio/mp3"/></audio>
+				
+				
+				<div style="margin-top:auto">
+				<p style="font-size:15px">Stepping SFX recorded by me in-person. All sound effects cleaned and edited through various programs before being inplemented into "Pinrut".</p>
+				<p style="font-size:15px">Recorded on iPhone. Edited with Audacity and LMMS.</p>
+				</div>
+				
+			</div>
+			
+			<div class="col-sm-5 alignV">
+				<h3 style="font-size:15px">SFX Package - Pinrut Game.</h3>
+				
+				<p style="padding-bottom:15px"></p>
+				
+				<div style="margin-top:auto">
+				<p class="button">
+					<a href="https://www.dropbox.com/s/k5yalqhhkjor4m8/Stepping%20SFX%20Clean.zip?dl=0"class="cleanLink whiteLink">Download the Stepping Package.</a>
+				</p>				
+			
+				<p style="padding-bottom:5px"></p>
+				
+				<p class="button"><a href="https://www.dropbox.com/s/8r25h0zqi56v9ed/Character%20SFX%20Clean.zip?dl=0"class="cleanLink whiteLink">Download the Character Package.</a></p>	
+			
+				<p style="padding-bottom:5px"></p>
+				
+				<p class="button"><a href="https://www.dropbox.com/s/hmfa1poh3exlyjf/SFX%20Clean.zip?dl=0"class="cleanLink whiteLink">Download the Full Package.</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<p style="padding-bottom:15px;"></p>
+	<hr>
+	<p style="padding-bottom:15px;"></p>
+	
+	<section class="container">
+		<div class="row">
+			<div class="col-sm-7 alignV"><iframe width="640px" height="360px" src="https://youtube.com/embed/ct5g770xOxY?autoplay=0"></iframe></div>
+			<div class="col-sm-5 alignV">
+				<h3 style="font-size:15px">Pocket Monsters - Intro Video.</h3>
+				<p style="font-size:15px">Directed the overall video direction and various scenes. Cut and edited the video, including effects, transitions, and captions.
+											Cleaned and edited the audio, and composed/edited various sound effects and atmospheric instrumentation.</p>
+				<p style="font-sie:15px">Video edited in Shotcut and Openshot. Audio cleaned/edited/composed in Audacity and LMMS.</p>
+				
+			</div>
+		</div>
+	</section>
+	
+	<p style="padding-bottom:15px;"></p>
+	<hr>
+	<p style="padding-bottom:15px;"></p>
+	
+	<div class="col-sm-6 alignV" style="float:left">
+		<p class="button"><a href="https://musescore.com/user/253081"class="cleanLink whiteLink">Musescore.</a></p>
+	</div>
+	
+	<div class="col-sm-6 alignV">
+		<p class="button"><a href="https://soundcloud.com/daices"class="cleanLink whiteLink">Soundcloud.</a></p>
+	</div>
+
+	<footer class="container">
+		<p style="font-size:10px">&copy; 2019 Athena Dai</p>
+	</footer>
+
+<script src="scripts.js"></script>
+<script>showSlides();</script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+hr{
+	border-color:#AB89C9;
+	border-width:5px;
+}
+
+.centered{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	text-align:center;
+	z-index:999;
+}
+
+.bottomed{
+	position:absolute;
+	bottom:0%;
+}
+
+.alignV{
+	display:flex;
+	flex-direction:column;
+	text-align:center;
+}
+
+.fullScreen{
+	z-index:990;
+	transition: 0.5s ease;
+	box-shadow: 0px 0px 1px 100vmax rgba(0,0,0,0.85);
+}
+.wLimit{
+	width:90vh;
+	height:auto;
+}
+
+.hLimit{
+	height:90vh;
+	width:auto;
+}
+
+.cleanLink{
+	text-decoration:none;
+	color:#4F2E75;
+	transition: 0.5s ease;
+	font-weight:bold;
+	position:relative;
+}
+
+.cleanLink:hover{
+	color:#AB89C9;
+	text-decoration:none;
+}
+
+.cleanLink:active{
+	top:2px;
+}
+
+.whiteLink{
+	color:white;
+}
+
+.whiteLink:hover{
+	color:#4F2E75;
+}
+
+.navProp{
+	position: absolute;
+	bottom: 1vh;
+	right: 0;
+}
+
+.headerInfo{
+	padding-top:70px;
+	padding-right:50px;
+	display:inline;
+	text-decoration:none;
+}
+
+.bigImage{
+	text-align: center;
+	background-image:URL("https://i.imgur.com/O0Btbd3.png");
+	background-size:contain;
+	height:300px;
+	opacity:0.75;
+}
+
+.headerImage{
+	opacity:0.75;
+}
+
+.mySlides {
+	display: none;
+	transition: 0.5s ease;
+}
+
+.slideShowContainer {
+  width:100%;
+  height:auto;
+}
+
+.button a{
+	cursor:pointer;
+	margin-right: 30px;
+	padding: 10px 10px;
+	border: 1px solid #AB89C9;
+	background-color:#AB89C9;
+	border-radius: 20px;
+	position:relative;
+	white-space: nowrap;
+}
+
+.button a:active{
+	top:2px;
+}
+
+.greyBorder{
+	background-color:#4F2E75;
+	padding: 15px 15px 15px 15px;
+}
+
+.previewImage{
+	width:200px;
+	height:auto;
+}
+
+.quarterSplit{
+	width:25%;
+	display:inline-block;
+	padding: 5px 5px 5px 5px;
+}
+
+.sheetMusic{
+	position:absolute;
+	bottom:0;
+}
+
+.center{
+	position:absolute;
+	left:50%;
+	transform:translate(-50%);
+}
+
+.artBox{
+	margin-bottom:10px;
+	width:100%;
+	height:auto;
+	background-color:#AB89C9;
+}
+
+.artFade{
+	width:100%;
+	transition: 0.5s ease;
+}
+
+.textFade{
+	transition: 0.5s ease;
+	opacity: 0;
+	color:white;
+}
+
+.textFade:hover{
+	opacity:0.9;
+}
+
+.artFade:hover{
+	opacity:0.2;
+}
+
+.artFade:hover ~.textFade{
+	opacity:0.9;
+}
+
+video:hover{
+	opacity:1;
+}
+
+.labelTop{
+	font-size:20px;
+	white-space: nowrap;
+	overflow:hidden;
+}
+
+.labelBottom{
+	font-size:15px;
+	white-space: nowrap;
+	overflow:hidden;
+}
+
+.popup {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+
+.popAsset{
+	visibility: hidden;
+	position: absolute;
+	z-index:999;
+	width:50vh;
+}
+
+.popup .show{
+	visibility: visible;
+	-webkit-animation: fadeIn 0.5s;
+	animation: fadeIn 0.5s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}

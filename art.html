@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="styles.css"/>
+<title>Website Prototype</title>
+</head>
+
+
+<body>	
+	<header class="container">
+		<div class="row">
+			<div class="col-sm-4"><h1 style="display: inline;"><a href="index.html" class="cleanLink">Athena Dai</a></h1></div>
+			<div class="col-sm-8 text-right">
+				<nav class="navProp">
+					<p class="headerInfo"><a href="index.html" class="cleanLink">Home</a></p>
+					<p class="headerInfo"><a href="resume.html"class="cleanLink">Resumé</a></p>
+					<p class="headerInfo">Art</p>
+					<p class="headerInfo"><a href="music.html"class="cleanLink">Music</a></p>
+					<p class="headerInfo"><a href="games.html"class="cleanLink">Games</a></p>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<div class="headerImage">
+		<div style="position:relative">
+			<img src="https://i.imgur.com/hrjvnZL.png" class="mySlides" style="width:100%"/>
+			<img src="https://i.imgur.com/aDEIxon.png" class="mySlides" style="width:100%"/>
+			<img src="https://i.imgur.com/xZakRZv.png" class="mySlides" style="width:100%"/>
+			<img src="https://i.imgur.com/m6yTDp4.png" class="mySlides" style="width:100%"/>
+			<img src="https://i.imgur.com/4lC99jI.png" class="mySlides" style="width:100%"/>
+			<div class="centered">
+				<h1 style="color:white;">My Art.</h1>
+				<h2 style="color:white;">Everything from paint to photoshop.</h2>
+			</div>
+		</div>
+	</div>
+	
+	<p style="padding-bottom:5px;"></p>
+	
+	<section class="container" style="text-align:center; text-decoration:none; padding-top: 2vh;">		
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="button"><a href="#freelance" class="cleanLink whiteLink">Freelance.</a></div>
+			</div>
+			<div class="col-sm-4">
+				<div class="button"><a href="#adverts" class="cleanLink whiteLink">Adverts.</a></div>
+			</div>
+			<div class="col-sm-4">
+				<div class="button"><a href="#apparel"class="cleanLink whiteLink">Apparel.</a></div>
+			</div>
+		</div>
+	</section>
+	
+	<p style="padding-bottom:15px;"></p>
+	
+	<section class="container">
+		<div class="row" id="freelance">
+			<div class="col-sm-3">
+				<div class="artBox">
+					<div class="popup" onclick="showPopUp(0)">
+						<img class="artFade" src="https://i.imgur.com/YRXfwD7.png"/>
+						<div class="centered textFade">
+							<h3 class="labelTop">Bastet.</h3>
+							<p class="labelBottom">Adobe Illustrator.</p>
+						</div>
+						<span class="fullScreen popAsset centered"><img class="wLimit" src="https://i.imgur.com/YRXfwD7.png"/></span>
+					</div>
+				</div>
+				
+				<div class="artBox">
+					<div class="popup" onclick="showPopUp(1)">
+						<img class="artFade" src="https://i.imgur.com/f9f8GbB.jpg"/>
+						<div class="centered textFade">
+								<h3 class="labelTop">Galaxy Series - 1.</h3>
+								<p class="labelBottom">Acrylic/Spray paint on canvas.</p>
+						</div>
+						<span class="fullScreen popAsset centered"><img class="hLimit" src="https://i.imgur.com/f9f8GbB.jpg"/></span>
+					</div>
+				</div>
+				
+				<div class="artBox">
+					<div class="popup" onclick="showPopUp(2)">
+						<img class="artFade" src="https://i.imgur.com/H6cSGGP.jpg"/>
+						<div class="centered textFade">
+							<h3 class="labelTop">Galaxy Series - 2.</h3>
+							<p class="labelBottom">Acrylic/Spray paint on canvas.</p>
+						</div>
+						<span class="fullScreen popAsset centered"><img class="hLimit" src="https://i.imgur.com/H6cSGGP.jpg"/>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-3">
+				<div class="artBox">
+					<div class="popup" onclick="showPopUp(3)">
+						<img class="artFade" src="https://i.imgur.com/31qEZlj.jpg"/>
+						<div class="centered textFade">
+							<h3 class="labelTop">Underground Boss.</h3>
+							<p class="labelBottom">Illustrator/Paint Tool Sai.</p>
+						</div>
+						<span class="fullScreen popAsset centered"><img class="wLimit" src="https://i.imgur.com/31qEZlj.jpg"/>
+					</div>
+				</div>
+				
+				<div class="artBox">
+					<video class="artFade" controls>
+						<source src="ram.mp4" type=video/mp4> //UNDONE
+					</video>
+					<div class="centered textFade" style="top:70%">
+						<h3 class="labelTop">Cornerstone Ram.</h3>
+						<p class="labelBottom">Acrylic on canvas.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-3">
+				<div class="artBox">
+					<div class="popup" onclick="showPopUp(4)">
+						<img class="artFade" src="https://i.imgur.com/hQzeFpL.jpg"/>
+						<div class="centered textFade">
+							<h3 class="labelTop">Changsha Riverview.</h3>
+							<p class="labelBottom">Acrylic/Gouache on Canvas.</p>
+						</div>
+						<span class="fullScreen popAsset centered"><img class="hLimit" src="https://i.imgur.com/hQzeFpL.jpg"/>
+					</div>
+				</div>
+				
+				<div class="artBox">
+					<div class="popup" onclick="showPopUp(5)">
+						<img class="artFade" src="https://i.imgur.com/XK4pgam.png"/>
+						<div class="centered textFade">
+							<h3 class="labelTop">IB Inclusive Logo.</h3>
+							<p class="labelBottom">Illustrator/Photoshop.</p>
+						</div>
+						<span class="fullScreen popAsset centered"><img class="hLimit" src="https://i.imgur.com/XK4pgam.png"/>
+					</div>
+				</div>
+				
+				<div class="artBox">
+					<div class="popup" onclick="showPopUp(6)">
+						<img class="artFade" src="https://i.imgur.com/Or5uprB.png"/>
+						<div class="centered textFade">
+							<h3 class="labelTop">Glowing Ring.</h3>
+							<p class="labelBottom">Paint Tool Sai.</p>
+						</div>
+						<span class="fullScreen popAsset centered"><img class="wLimit" src="https://i.imgur.com/Or5uprB.png"/>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-3">
+			
+				<div class="artBox">
+					<div class="popup" onclick="showPopUp(7)">
+						<img class="artFade" src="https://i.imgur.com/BCxPEZM.jpg"/>
+						<div class="centered textFade">
+							<h3 class="labelTop">Daytime.</h3>
+							<p class="labelBottom">Paint Tool Sai.</p>
+						</div>
+						<span class="fullScreen popAsset centered"><img class="wLimit" src="https://i.imgur.com/BCxPEZM.jpg"/>
+					</div>
+				</div>
+				
+				<div class="artBox">
+					<div class="popup" onclick="showPopUp(8)">
+						<img class="artFade" src="https://i.imgur.com/ON2BYQ6.png"/>
+						<div class="centered textFade">
+							<h3 class="labelTop">Under the Mountain.</h3>
+							<p class="labelBottom">Paint Tool Sai.</p>
+						</div>
+						<span class="fullScreen popAsset centered"><img class="wLimit" src="https://i.imgur.com/ON2BYQ6.png"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<p style="padding-bottom:15px;"></p>
+		<hr>
+		<p style="padding-bottom:15px;"></p>
+				
+		<div class="row" id="adverts">
+			<div class="col-sm-3">
+				<div class="artBox">
+					<div class="popup" onclick="showPopUp(9)">
+						<img class="artFade" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/70890706_1276426262481723_6931795203896377344_n.jpg?_nc_cat=108&_nc_eui2=AeE1sDyztAp8WIHzA6DxUtVjBtAzTrf4qTF9GHby57BCt8cynhr-xBq4NofWdVHuomIpeC7s0k1CiIL4FpaJHdfQjC3nQd2whmxVWOEhtpNkCw&_nc_oc=AQlmoCbA1UaX9nC0QmRgK-mECSGKrXIWGHojPjhpSqrCU1oE4qJUjROnNGITyjEgPqI&_nc_ht=scontent-lax3-1.xx&oh=973aa80a847707322088f21da520005d&oe=5E550ABC"/>
+						<div class="centered textFade">
+							<h3 class="labelTop">Fall Workshop Series.</h3>
+							<p class="labelBottom">Photoshop/Illustrator.</p>
+						</div>
+						<span class="fullScreen popAsset centered"><img class="wLimit" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/70890706_1276426262481723_6931795203896377344_n.jpg?_nc_cat=108&_nc_eui2=AeE1sDyztAp8WIHzA6DxUtVjBtAzTrf4qTF9GHby57BCt8cynhr-xBq4NofWdVHuomIpeC7s0k1CiIL4FpaJHdfQjC3nQd2whmxVWOEhtpNkCw&_nc_oc=AQlmoCbA1UaX9nC0QmRgK-mECSGKrXIWGHojPjhpSqrCU1oE4qJUjROnNGITyjEgPqI&_nc_ht=scontent-lax3-1.xx&oh=973aa80a847707322088f21da520005d&oe=5E550ABC"/>
+					</div>
+				</div>
+				
+				<div class="artBox">
+					<div class="popup" onclick="showPopUp(10)">
+						<img class="artFade" src="https://i.imgur.com/jNQ3dnX.png"/>
+						<div class="centered textFade">
+								<h3 class="labelTop">Fall Event Series - 1.</h3>
+								<p class="labelBottom">Illustrator.</p>
+							</div>
+							<span class="fullScreen popAsset centered"><img class="wLimit" src="https://i.imgur.com/jNQ3dnX.png"/>
+					</div>
+				</div>
+				
+				<div class="artBox">
+					<div class="popup" onclick="showPopUp(11)">
+						<img class="artFade" src="https://i.imgur.com/gEFy9L1.jpg"/>
+						<div class="centered textFade">
+								<h3 class="labelTop">Fall Event Series - 2.</h3>
+								<p class="labelBottom">Illustrator.</p>
+							</div>
+							<span class="fullScreen popAsset centered"><img class="wLimit" src="https://i.imgur.com/gEFy9L1.jpg"/>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-3">
+				<div class="artBox">
+					<div class="popup" onclick="showPopUp(12)">
+						<img class="artFade" src="https://i.imgur.com/C1WGMar.png"/>
+						<div class="centered textFade">
+								<h3 class="labelTop">Summer '19 Series - 1.</h3>
+								<p class="labelBottom">Illustrator.</p>
+							</div>
+							<span class="fullScreen popAsset centered"><img class="wLimit" src="https://i.imgur.com/C1WGMar.png"/>
+					</div>
+				</div>
+				
+				<div class="artBox">
+					<div class="popup" onclick="showPopUp(13)">
+						<img class="artFade" src="https://i.imgur.com/jT0WK4F.png"/>
+						<div class="centered textFade">
+								<h3 class="labelTop">Summer '19 Series - 2.</h3>
+								<p class="labelBottom">Illustrator.</p>
+							</div>
+							<span class="fullScreen popAsset centered"><img class="wLimit" src="https://i.imgur.com/jT0WK4F.png"/>
+					</div>
+				</div>
+				<div class="artBox">
+					<div class="popup" onclick="showPopUp(14)">
+						<img class="artFade" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/67871107_1212531275537889_7148268818404474880_n.jpg?_nc_cat=103&_nc_eui2=AeG_bJvJwqTyMFJBrWL5-QKjLILfiQanBxA-79WycpeKGCuBA_Dy62sGSIcnvleU-z9vqHiKwr2YEBhH-y1vxPUqCyRxpv1vseh8g_2d-F6iFw&_nc_oc=AQl111J4lGzVgsuenRevcJIR2O6PvD2xRfVJPAZFFXkWZkUo86LbD-xjJExYY_P7xCQ&_nc_ht=scontent-lax3-1.xx&oh=66d9bc126edb489060968648251e7072&oe=5E62B063"/>
+						<div class="centered textFade">
+								<h3 class="labelTop">Summer '19 Series - 3.</h3>
+								<p class="labelBottom">Illustrator.</p>
+							</div>
+							<span class="fullScreen popAsset centered"><img class="wLimit" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/67871107_1212531275537889_7148268818404474880_n.jpg?_nc_cat=103&_nc_eui2=AeG_bJvJwqTyMFJBrWL5-QKjLILfiQanBxA-79WycpeKGCuBA_Dy62sGSIcnvleU-z9vqHiKwr2YEBhH-y1vxPUqCyRxpv1vseh8g_2d-F6iFw&_nc_oc=AQl111J4lGzVgsuenRevcJIR2O6PvD2xRfVJPAZFFXkWZkUo86LbD-xjJExYY_P7xCQ&_nc_ht=scontent-lax3-1.xx&oh=66d9bc126edb489060968648251e7072&oe=5E62B063"/>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-3">
+				<div class="artBox">
+					<div class="popup" onclick="showPopUp(15)">
+						<img class="artFade" src="https://i.imgur.com/OPPewRc.png"/>
+						<div class="centered textFade">
+								<h3 class="labelTop">ACM Studio Promo Flyer.</h3>
+								<p class="labelBottom">Photoshop/Illustrator.</p>
+							</div>
+							<span class="fullScreen popAsset centered"><img class="hLimit" src="https://i.imgur.com/OPPewRc.png"/>
+					</div>
+				</div>
+				<div class="artBox">
+					<div class="popup" onclick="showPopUp(16)">
+						<img class="artFade" src="https://i.imgur.com/91zoKuB.jpg"/>
+						<div class="centered textFade">
+								<h3 class="labelTop">ACM Workshop Banner.</h3>
+								<p class="labelBottom">Photoshop/Illustrator.</p>
+							</div>
+							<span class="fullScreen popAsset centered"><img class="wLimit" src="https://i.imgur.com/91zoKuB.jpg"/>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-3">
+				<div class="artBox">
+					<div class="popup" onclick="showPopUp(17)">
+						<img class="artFade" src="https://i.imgur.com/SWOgDh0.jpg"/>
+						<div class="centered textFade">
+								<h3 class="labelTop">FB Page Design.</h3>
+								<p class="labelBottom">Photoshop/Illustrator.</p>
+							</div>
+							<span class="fullScreen popAsset centered"><img class="wLimit" src="https://i.imgur.com/SWOgDh0.jpg"/>
+					</div>
+				</div>
+				<div class="artBox">
+					<div class="popup" onclick="showPopUp(18)">
+						<img class="artFade" src="https://i.imgur.com/swoatrF.jpg"/>
+						<div class="centered textFade">
+								<h3 class="labelTop">Website Page Design.</h3>
+								<p class="labelBottom">Photoshop/Illustrator/Indesign.</p>
+							</div>
+							<span class="fullScreen popAsset centered"><img class="wLimit" src="https://i.imgur.com/swoatrF.jpg"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<p style="padding-bottom:15px;"></p>
+		<hr>
+		<p style="padding-bottom:15px;"></p>
+		
+		<div class="row"><h3 class="center" style="font-size:15px">*all designs have been produced and sold, or will be.</h3></div>
+		
+		<p style="padding-bottom:15px;"></p>
+		
+		<div class="row" id="apparel">
+					
+			<div class="col-sm-3">
+				<div class="artBox">
+					<div class="popup" onclick="showPopUp(19)">
+						<img class="artFade" src="https://i.imgur.com/Lx18PPZ.png"/>
+						<div class="centered textFade">
+								<h3 class="labelTop">FC '19/'20 T-shirt.</h3>
+								<p class="labelBottom">200 units every quarter.</p>
+							</div>
+							<span class="fullScreen popAsset centered"><img class="hLimit" src="https://i.imgur.com/Lx18PPZ.png"/>
+					</div>
+				</div>
+				
+				<div class="artBox">
+					<div class="popup" onclick="showPopUp(20)">
+						<img class="artFade" src="https://i.imgur.com/I586fRj.jpg"/>
+						<div class="centered textFade">
+								<h3 class="labelTop">Green Team '18 Shirt.</h3>
+								<p class="labelBottom">20 units.</p>
+							</div>
+							<span class="fullScreen popAsset centered"><img class="hLimit" src="https://i.imgur.com/I586fRj.jpg"/>
+					</div>
+				</div>
+				
+				<div class="artBox">
+					<div class="popup" onclick="showPopUp(21)">
+						<img class="artFade" src="https://i.imgur.com/keEOFYG.jpg"/>
+						<div class="centered textFade">
+								<h3 class="labelTop">Team NaKS Sweater.</h3>
+								<p class="labelBottom">40 units.</p>
+							</div>
+							<span class="fullScreen popAsset centered"><img class="hLimit" src="https://i.imgur.com/keEOFYG.jpg"/>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-3">
+				<div class="artBox">
+					<div class="popup" onclick="showPopUp(22)">
+						<img class="artFade" src="https://i.imgur.com/40KdaIZ.png"/>
+						<div class="centered textFade">
+								<h3 class="labelTop">Team AYCE Windbreaker.</h3>
+								<p class="labelBottom">40 units.</p>
+							</div>
+							<span class="fullScreen popAsset centered"><img class="hLimit" src="https://i.imgur.com/40KdaIZ.png"/>
+					</div>
+				</div>
+				
+				<div class="artBox">
+					<div class="popup" onclick="showPopUp(23)">
+						<img class="artFade" src="https://i.imgur.com/QrNCeY6.jpg"/>
+						<div class="centered textFade">
+								<h3 class="labelTop">IB Diploma Sweater.</h3>
+								<p class="labelBottom">60 units.</p>
+							</div>
+							<span class="fullScreen popAsset centered"><img class="wLimit" src="https://i.imgur.com/QrNCeY6.jpg"/>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-3">
+				<div class="artBox">
+					<div class="popup" onclick="showPopUp(24)">
+						<img class="artFade" src="https://i.imgur.com/YSTrezh.png"/>
+						<div class="centered textFade">
+								<h3 class="labelTop">Team Polaris Jersey.</h3>
+								<p class="labelBottom">30 units.</p>
+							</div>
+							<span class="fullScreen popAsset centered"><img class="wLimit" src="https://i.imgur.com/YSTrezh.png"/>
+					</div>
+				</div>
+				
+				<div class="artBox">
+					<div class="popup" onclick="showPopUp(25)">
+						<img class="artFade" src="https://i.imgur.com/yc1AqsX.png"/>
+						<div class="centered textFade">
+								<h3 class="labelTop">Skyline '18 T-Shirt.</h3>
+								<p class="labelBottom">25 units.</p>
+							</div>
+							<span class="fullScreen popAsset centered"><img class="wLimit" src="https://i.imgur.com/yc1AqsX.png"/>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-3">
+				<div class="artBox">
+					<div class="popup" onclick="showPopUp(26)">
+						<img class="artFade" src="https://i.imgur.com/7tphAsv.png"/>
+						<div class="centered textFade">
+								<h3 class="labelTop">Team VOID Windbreaker.</h3>
+								<p class="labelBottom">40 units.</p>
+						</div>
+						<span class="fullScreen popAsset centered"><img class="wLimit" src="https://i.imgur.com/7tphAsv.png"/>
+					</div>
+				</div>
+				
+				<div class="artBox">
+					<div class="popup" onclick="showPopUp(27)">
+						<img class="artFade" src="https://i.imgur.com/yTYtQti.jpg"/>
+						<div class="centered textFade">
+								<h3 class="labelTop">Team LMNT Longsleeve.</h3>
+								<p class="labelBottom">40 Units.</p>
+						</div>
+						<span class="fullScreen popAsset centered"><img class="wLimit" src="https://i.imgur.com/yTYtQti.jpg"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<p style="padding-bottom:15px;"></p>
+		
+		<div class="row"><div class="button center"><a href="https://www.instagram.com/athenian._/"class="cleanLink whiteLink">Instagram.</a></div>
+		
+		<p style="padding-bottom:15px;"></p>
+	</section>
+	
+	
+	<footer class="container">
+		<p style="font-size:10px">&copy; 2019 Athena Dai</p>
+	</footer>
+
+<script src="scripts.js"></script>
+<script>showSlides();</script>
+</body>	
+</html>
